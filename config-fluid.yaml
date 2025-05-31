@@ -7,3 +7,4 @@ language: ES
 sast:
   include:
     - .
+strict: true
