@@ -10,3 +10,10 @@ jobs:
            name: skimsStandalone
            with:
              args: skims --strict scan config-fluid.yaml
+         - name: Upload results
+           uses: actions/upload-artifact@v4
+           if: always()
+           with:
+             name: skims-results-csv
+             path: ./Fluid-Attacks-Results.csv
+             
