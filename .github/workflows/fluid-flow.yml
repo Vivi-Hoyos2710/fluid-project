@@ -9,4 +9,5 @@ jobs:
          - uses: docker://docker.io/fluidattacks/skims:latest
            name: skimsStandalone
            with:
-             args: skims scan /website
+         
+             args: skims scan ${{github.workspace}}/website
